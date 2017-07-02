@@ -11,5 +11,5 @@ export const receiveCurrentUser = (user) =>({
 export const signIn = user => dispatch => {
   APIUtil.signIn(user)
     .then(currentUser => dispatch(receiveCurrentUser(currentUser)))
-    .fail(error => dispatch(receiveErrors(error.responseJSON)))
-}
+    .fail(error => dispatch(receiveErrors(error.responseJSON)));
+};
