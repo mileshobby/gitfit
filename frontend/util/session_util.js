@@ -1,7 +1,7 @@
 export const signIn = (user) =>{
   return $.ajax({
     method: 'post',
-    url: '/api/users',
+    url: '/api/session',
     data: user
   });
 };
