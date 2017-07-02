@@ -1,4 +1,4 @@
-import { RECEIVE_ERRORS } from 'error_actions';
+import { RECEIVE_ERRORS } from '../actions/error_actions';
 
 const noErrors = [];
 
